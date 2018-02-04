@@ -1,5 +1,2 @@
-graphql_core==2.0
-graphene==2.0.1
 graphene_django==2.0.0
 Django==2.0.2
-graphql==0.0.4
