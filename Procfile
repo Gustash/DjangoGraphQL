@@ -1,1 +1,1 @@
-web: gunicorn graphqlapi.wsgi --log-file -
+web: gunicorn graphqlapi.wsgi:application --log-file -
