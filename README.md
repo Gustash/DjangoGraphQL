@@ -33,7 +33,7 @@ You can find this project on heroku by following https://graphql-django.herokuap
 * [pip](https://pypi.python.org/pypi/pip) - Dependency Management
 * [pipenv](https://github.com/pypa/pipenv) - Packaging tool and virtualenv management
 * [GraphQL](http://graphql.org/learn/) - Used for backend queries
-* [Graphene Django](http://graphql.org/learn/) - Integration of GraphQL in Django app
+* [Graphene Django](http://docs.graphene-python.org/projects/django/en/latest/) - Integration of GraphQL in Django app
 
 ## Contributing
 
