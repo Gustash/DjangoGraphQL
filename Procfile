@@ -1,1 +1,1 @@
-web: gunicorn graphqlapi.wsgi:application --log-file -
+web: gunicorn graphqlapi.wsgi:application --log-file - --preload --workers 1
