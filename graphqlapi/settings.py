@@ -27,6 +27,7 @@ SECRET_KEY = '13i41)lys4hf*oo6q%-qgc+c6$1iij98yzs4g02ar&wdplg@!h'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1', # Localhost
     'graphql-django.herokuapp.com', # Heroku app url
 ]
 
@@ -42,10 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'todos',
+    'my_graphql',
 ]
 
 GRAPHENE = {
-    'SCHEMA': 'graphqlapi.schema.schema' # Where your Graphene schema lives
+    'SCHEMA': 'my_graphql.schema.schema' # Where your Graphene schema lives
 }
 
 MIDDLEWARE = [
@@ -138,3 +140,25 @@ STATICFILES_DIRS = (
 # Update database config
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+# CUSTOM SETTINGS VARIABLES
+RANDOMUSER_API_VERSION = '1.1'
+
+VALID_NATIONALITIES = [
+    'au', 
+    'br', 
+    'ca', 
+    'ch', 
+    'de', 
+    'dk', 
+    'es', 
+    'fi', 
+    'fr', 
+    'gb', 
+    'ie', 
+    'ir', 
+    'nl', 
+    'nz', 
+    'tr', 
+    'us',
+]
